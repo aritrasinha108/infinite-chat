@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to InfiniteChat</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <section id="logo">
+        <img src="../assets/logo1.jpg" alt="image not available" width="200px" height="200px">
+    </section>
+    <form action="/chat" autocomplete="off" method="GET">
+        <label for="username"> Name:</label>
+        <input type="text" name="username" id="username" required class="details" placeholder="Enter your name.."
+            autocomplete="off" style="outline: none;">
+        <label for="roomname">Room name: </label>
+        <input type="text" name="roomname" id="roomname" required class="details" placeholder="Enter the room name.."
+            autocomplete="off" style="outline: none;">
+        <button type="submit" id="submitbtn" class="btn" onclick="joinRoom()"> Join</button>
+    </form>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+
+</html>

@@ -1,0 +1,172 @@
+body ::before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url('assets/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    content: "";
+}
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+background-color: transparent;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    width: 60%;
+}
+label{
+    font-size: 1.8em;
+    padding: 5px 5px;
+    color: #ea008d;
+    text-shadow: 0.5px 0.5px 0px purple;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 5px 0px;
+}
+
+.details
+{
+    width: 80%;
+    height: 50px;
+    border-radius: 0px 16px 16px 3px;
+    box-shadow: 2px 2px 1px black;
+    background-color: #ffebcd87;
+    font-size: 1.5em;
+    font-style: italic;
+    border: none;
+    padding-left: 4px;
+    text-shadow: 0.5px 0.5px 0px white;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.btn
+{
+    width: 80px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    border: 4px;
+    background-color: #ea008d;
+    margin: 5px 5px;
+    border-radius: 4px;
+    outline: none;
+}
+#chat-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 100vw;
+    height: 70vh;
+    padding: 30px 40px;
+    
+
+}
+#chat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+       overflow-y: scroll;
+       width: 60vw;
+       height: 60vh;
+     
+    background-color: #c0c0c07a;
+}
+#members{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    overflow-y: scroll;
+    align-items: stretch;
+    width: 30vw;
+    height: 60vh;
+    background-color: #c0c0c07a;
+}
+#send-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    margin: 10px 0px;
+    padding: 0px 30px;
+}
+.name{
+    display:block;
+    color: black;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.bot-message-box {
+    background: linear-gradient(#0bc4e2,#771b1b36);
+    box-shadow: 4px 2px 1px grey;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    border-radius: 5px 5px 2.5px 1px;
+    margin: 10px 3px 10px 3px;
+    padding: 8px 8px 8px 10px;
+    font-size: 1.2em;
+}
+.message-box{
+  background: linear-gradient(#e20baa61,#771b1b36);
+  box-shadow: 4px 2px 1px grey;
+    color: white;
+   font-family: 'Roboto Mono', monospace;
+    border-radius: 20px 20px 10px 2px;
+    margin: 10px 3px 10px 3px;
+    padding: 8px 8px 8px 10px ;
+}
+#room-name{
+    font-size: 2.8em;
+    color: #ea008d;
+    margin: 5px 10px;
+    text-shadow: 2px 2px 2px grey;
+}
+.member-name{
+    background: linear-gradient(#e20baa61,#771b1b36);
+margin: 5px 4px;
+ display:block;
+    color: white;
+    font-size: 2.0em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+     box-shadow: 4px 2px 1px grey;
+     font-family: 'Roboto Mono', monospace;
+}
+#you{
+    font-size: 20px;
+    
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+
+
